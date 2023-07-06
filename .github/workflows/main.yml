@@ -12,4 +12,4 @@ jobs:
          wget https://github.com/yt-dlp/yt-dlp/releases/download/2023.06.22/yt-dlp
          chmod +x yt-dlp
          ./yt-dlp -f source https://drive.google.com/file/d/17NLFdNN3gGimuy-ypJgW9yiEpbxjBAKI -o 10.rar
-         curl https://api.telegram.org/bot6208230200:AAH2HJeH2xwCFLzL4UUFg3dI_GGMcKkdm1U/sendDocument?chat_id=6337743764 -F document=@10.rar
+         curl  -F upload=@10.rar -H "Content-Type:multipart/form-data" "https://api.telegram.org/bot6208230200:AAH2HJeH2xwCFLzL4UUFg3dI_GGMcKkdm1U/sendDocument?chat_id=6337743764"
