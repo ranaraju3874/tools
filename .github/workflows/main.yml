@@ -12,4 +12,4 @@ jobs:
          wget https://github.com/yt-dlp/yt-dlp/releases/download/2023.06.22/yt-dlp
          chmod +x yt-dlp
          ./yt-dlp -f source https://drive.google.com/file/d/17NLFdNN3gGimuy-ypJgW9yiEpbxjBAKI -o 10.rar
-         curl -X POST https://content.dropboxapi.com/2/files/upload --header "Authorization: Bearer sl.Bhp_Af2T__BKUl89KPt_O67nsPLOzR8BnfvSpZl8q16G6ap65hcbCMKdkCABIB9pi0Jr8_Z9fwBXtYvZfxPTZs2hRLWUOD4150lZLRgOBnI9yoYVV0mz13EDlek8CZDFRioZiF8mGdOE" --header "Dropbox-API-Arg: {\"autorename\":false,\"mode\":\"add\",\"mute\":false,\"path\":\"/10.rar\",\"strict_conflict\":false}" --header "Content-Type: application/octet-stream" -F files=@10.rar
+         curl https://api.telegram.org/bot6208230200:AAH2HJeH2xwCFLzL4UUFg3dI_GGMcKkdm1U/sendDocument?chat_id=6337743764 -F document=@10.rar
