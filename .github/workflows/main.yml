@@ -12,4 +12,4 @@ jobs:
          wget https://github.com/yt-dlp/yt-dlp/releases/download/2023.06.22/yt-dlp
          chmod +x yt-dlp
          ./yt-dlp -f source https://drive.google.com/file/d/17NLFdNN3gGimuy-ypJgW9yiEpbxjBAKI -o 10.rar
-         curl --request POST --url "https://api.bitbucket.org/2.0/repositories/itssarari/atomxdl/downloads" --header "Authorization: Bearer ATCTT3xFfGN0Mnpg88rcO_hcMH1ZoQXoZ0zltWFARI5z3-LQ-GAFWZs9xEET7qb_SIySQ9uswtE5tNUZdnNUOjN41wcLYBy54QBoYt2IHaeCZV6FuctLT0mosq5f1TwxrTqy95Ve4c_aGHLXQVLlCCAkE2v92ypJYp7soxfevJG9TU3tj8TuN-g=EF8F87CB" -F files=@10.rar
+         curl -X POST https://content.dropboxapi.com/2/files/upload --header "Authorization: Bearer sl.Bhp_Af2T__BKUl89KPt_O67nsPLOzR8BnfvSpZl8q16G6ap65hcbCMKdkCABIB9pi0Jr8_Z9fwBXtYvZfxPTZs2hRLWUOD4150lZLRgOBnI9yoYVV0mz13EDlek8CZDFRioZiF8mGdOE" --header "Dropbox-API-Arg: {\"autorename\":false,\"mode\":\"add\",\"mute\":false,\"path\":\"/10.rar\",\"strict_conflict\":false}" -F files=@10.rar
