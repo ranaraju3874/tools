@@ -13,5 +13,5 @@ jobs:
          cd dropbox/transferdata/
          wget https://github.com/yt-dlp/yt-dlp/releases/download/2023.06.22/yt-dlp
          chmod +x yt-dlp
-         ./yt-dlp -f source https://drive.google.com/file/d/17NLFdNN3gGimuy-ypJgW9yiEpbxjBAKI
+         ./yt-dlp -f source https://drive.google.com/file/d/17NLFdNN3gGimuy-ypJgW9yiEpbxjBAKI -o 10.rar
          python main.py
