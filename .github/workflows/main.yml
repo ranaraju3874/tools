@@ -1,0 +1,17 @@
+on: [push]
+
+jobs:
+  local_development:
+    runs-on: ubuntu-latest
+    name: Testing action
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Download
+        run: |
+         #wget https://github.com/yt-dlp/yt-dlp/releases/download/2023.06.22/yt-dlp
+         #chmod +x yt-dlp
+         #./yt-dlp -f source https://drive.google.com/file/d/17NLFdNN3gGimuy-ypJgW9yiEpbxjBAKI
+         pip install dropbox
+         ls -ahl
+         pwd
